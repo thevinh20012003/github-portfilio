@@ -58,7 +58,11 @@
             height: 200px;
             border-radius: 50%;
             border: 6px solid rgba(255, 255, 255, 0.3);
-            background: linear-gradient(45deg, #f39c12, #e67e22);
+            background-image: url('avatar.jpg');
+            background-size: contain; 
+            background-repeat: no-repeat;       
+            background-position: center;      
+            
             display: flex;
             align-items: center;
             justify-content: center;
@@ -67,10 +71,11 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
         }
-        
+
         .avatar:hover {
             transform: scale(1.05);
         }
+
         
         .hero-content h1 {
             font-size: 3.5rem;
@@ -384,7 +389,6 @@
                         <div class="hero-content" data-aos="fade-up">
                             <div class="avatar-container">
                                 <div class="avatar">
-                                    <i class="fas fa-user"></i>
                                 </div>
                             </div>
                             <h1>Hà Minh Tuấn</h1>
@@ -630,6 +634,54 @@
                                 </ul>
                                 <a
                                     href="https://github.com/MinhTuan2003-max/TaskManagementSystem_TMS.git"
+                                    class="btn btn-primary mt-3"
+                                    target="_blank">
+                                    <i class="fab fa-github me-2"></i>View on
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h4><i class="fas fa-mobile-alt me-2"></i>GoGo –
+                                    Health Tracker App</h4>
+                                <p class="mb-3">
+                                    A mobile application that helps users
+                                    monitor and improve their daily health
+                                    habits
+                                    such as weight, sleep, diet, and workout
+                                    planning.
+                                </p>
+                                <div>
+                                    <span class="project-tech">Java</span>
+                                    <span class="project-tech">XML (Material
+                                        Design)</span>
+                                    <span class="project-tech">SQLite</span>
+                                    <span class="project-tech">Google
+                                        Sign-In</span>
+                                    <span
+                                        class="project-tech">MPAndroidChart</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h6 class="text-primary mb-3">Key
+                                    Contributions:</h6>
+                                <ul class="feature-list">
+                                    <li>Implemented BMI, BMR, BFP tracking and
+                                        weight prediction</li>
+                                    <li>Developed sleep and workout planning
+                                        modules</li>
+                                    <li>Integrated Google Sign-In and health
+                                        reminders</li>
+                                    <li>Used MPAndroidChart for data
+                                        visualization</li>
+                                </ul>
+                                <p><strong>Role:</strong> Android Developer</p>
+                                <a
+                                    href="https://github.com/MinhTuan2003-max/GoGoApp.git"
                                     class="btn btn-primary mt-3"
                                     target="_blank">
                                     <i class="fab fa-github me-2"></i>View on
