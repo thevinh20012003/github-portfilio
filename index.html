@@ -11,7 +11,8 @@
     <style>
         :root {
             --primary-color: #2c3e50;
-            --secondary-color: #3498db;
+            --secondary-color: #f4a261;
+            /* Changed to light orange */
             --accent-color: #e74c3c;
             --text-light: #7f8c8d;
             --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -19,12 +20,12 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--primary-color);
+            color: var(--secondary-color);
             line-height: 1.6;
         }
 
         .hero-section {
-            background: var(--gradient-bg);
+            background: var(--secondary-color);
             color: white;
             padding: 100px 0;
             position: relative;
@@ -58,7 +59,6 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-
             display: flex;
             align-items: center;
             justify-content: center;
@@ -71,7 +71,6 @@
         .avatar:hover {
             transform: scale(1.05);
         }
-
 
         .hero-content h1 {
             font-size: 3.5rem;
@@ -96,7 +95,7 @@
         }
 
         .contact-links a:hover {
-            color: var(--accent-color);
+            color: var(--secondary-color);
             transform: translateY(-2px);
         }
 
@@ -110,7 +109,7 @@
             text-align: center;
             margin-bottom: 3rem;
             position: relative;
-            color: var(--primary-color);
+            color: var(--secondary-color);
         }
 
         .section-title::after {
@@ -177,7 +176,7 @@
         }
 
         .project-header {
-            background: var(--gradient-bg);
+            background: var(--secondary-color);
             color: white;
             padding: 25px;
             position: relative;
@@ -279,7 +278,7 @@
         }
 
         .btn-primary {
-            background: var(--gradient-bg);
+            background: var(--secondary-color);
             border: none;
             padding: 12px 30px;
             border-radius: 25px;
@@ -305,8 +304,12 @@
         .floating-shapes span {
             position: absolute;
             display: block;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.116);
             animation: float 6s ease-in-out infinite;
+        }
+
+        .navbar-brand {
+            color: var(--secondary-color) !important;
         }
 
         @keyframes float {
@@ -417,7 +420,11 @@
                 <div class="col-lg-8">
                     <div class="text-center" data-aos="fade-up" data-aos-delay="200">
                         <p class="lead text-muted">
-                            I am a fourth-year Software Engineering student with a strong interest in backend development, particularly using Java. I have a solid foundation in Java Core and Object-Oriented Programming (OOP), and I have successfully built several personal projects utilizing JSP/Servlet and Spring Boot frameworks with relational databases such as MySQL and SQL Server.
+                            I am a fourth-year Software Engineering student with a strong interest in backend
+                            development, particularly using Java. I have a solid foundation in Java Core and
+                            Object-Oriented Programming (OOP), and I have successfully built several personal projects
+                            utilizing JSP/Servlet and Spring Boot frameworks with relational databases such as MySQL and
+                            SQL Server.
                         </p>
                     </div>
                 </div>
@@ -433,7 +440,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-card">
-                        <h4><i class="fas fa-code text-primary me-2"></i>Programming
+                        <h4><i class="fas fa-code text-white me-2" style="background-color: var(--secondary-color)"></i>Programming
                             Languages</h4>
                         <div>
                             <span class="skill-tag">Java (Core Java, Java
@@ -447,7 +454,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-card">
-                        <h4><i class="fas fa-tools text-primary me-2"></i>Frameworks
+                        <h4><i class="fas fa-code text-white me-2" style="background-color: var(--secondary-color)"></i>Frameworks
                             & Tools</h4>
                         <div>
                             <span class="skill-tag">Spring Boot</span>
@@ -463,7 +470,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="skill-card">
-                        <h4><i class="fas fa-cogs text-primary me-2"></i>Other
+                        <h4><i class="fas fa-code text-white me-2" style="background-color: var(--secondary-color)"></i>Other
                             Skills</h4>
                         <div>
                             <span class="skill-tag">RESTful API</span>
@@ -508,7 +515,7 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h6 class="text-primary mb-3">Key Features:</h6>
+                            <h6 class="text-black mb-3" >Key Features:</h6>
                             <ul class="feature-list">
                                 <li>Show a list of products</li>
                                 <li>Add products to shopping cart (CRUD)
@@ -516,8 +523,8 @@
                                 <li>Search by category name/ textbox</li>
                                 <li>Checkout</li>
                             </ul>
-                            <a href="https://github.com/thevinh20012003/E-Commerce-Website.git" class="btn btn-primary mt-3"
-                                target="_blank">
+                            <a href="https://github.com/thevinh20012003/E-Commerce-Website.git"
+                                class="btn btn-primary mt-3" target="_blank">
                                 <i class="fab fa-github me-2"></i>View on
                                 GitHub
                             </a>
@@ -529,7 +536,10 @@
                         <div class="project-header">
                             <h4><i class="fas fa-book me-2"></i>Job Portal Web Application</h4>
                             <p class="mb-3">
-                                A full-stack web application that allows users to register as job seekers or recruiters, post and apply for jobs, manage user profiles, and perform job searches. The platform simulates a real-world job portal with authentication, authorization, and user role-based access
+                                A full-stack web application that allows users to register as job seekers or recruiters,
+                                post and apply for jobs, manage user profiles, and perform job searches. The platform
+                                simulates a real-world job portal with authentication, authorization, and user
+                                role-based access
                             </p>
                             <div>
                                 <span class="project-tech">Spring
@@ -541,15 +551,19 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h6 class="text-primary mb-3">Key Features:</h6>
+                            <h6 class="text-black mb-3">Key Features:</h6>
                             <ul class="feature-list">
-                                <li>Developed backend logic with Spring Boot and designed key entities (Users, JobPost, Apply, Save, etc.).</li>
-                                <li>Built REST APIs for job posting, user registration, job search with filters (type, location, date).</li>
-                                <li>Integrated Thymeleaf for frontend rendering and implemented job save/apply status logic.</li>
-                                <li>Wrote custom SQL queries with @Query in JPA and structured code in Controller–Service–Repository layers.</li>
+                                <li>Developed backend logic with Spring Boot and designed key entities (Users, JobPost,
+                                    Apply, Save, etc.).</li>
+                                <li>Built REST APIs for job posting, user registration, job search with filters (type,
+                                    location, date).</li>
+                                <li>Integrated Thymeleaf for frontend rendering and implemented job save/apply status
+                                    logic.</li>
+                                <li>Wrote custom SQL queries with @Query in JPA and structured code in
+                                    Controller–Service–Repository layers.</li>
                             </ul>
-                            <a href=" https://github.com/thevinh20012003/job-portal.git"
-                                class="btn btn-primary mt-3" target="_blank">
+                            <a href=" https://github.com/thevinh20012003/job-portal.git" class="btn btn-primary mt-3"
+                                target="_blank">
                                 <i class="fab fa-github me-2"></i>View on
                                 GitHub
                             </a>
@@ -560,7 +574,9 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h4><i class="fas fa-book me-2"></i>CoffeeFlow</h4>
-                            <p class="mb-3">CoffeeFlow is an Android app designed to help coffee shop owners streamline operations, monitor staff activity, and apply promotional strategies. Built with MVVM and Clean Architecture, the system ensures scalability and code maintainability.</p>
+                            <p class="mb-3">CoffeeFlow is an Android app designed to help coffee shop owners streamline
+                                operations, monitor staff activity, and apply promotional strategies. Built with MVVM
+                                and Clean Architecture, the system ensures scalability and code maintainability.</p>
                             <div>
                                 <span class="project-tech">Java</span>
                                 <span class="project-tech">Singleton, Factory, Observe</span>
@@ -571,15 +587,15 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h6 class="text-primary mb-3">Key Features:</h6>
+                            <h6 class="text-black mb-3">Key Features:</h6>
                             <ul class="feature-list">
                                 <li>Developed core features using MVVM + Clean Architecture.</li>
                                 <li>Built reusable UI components and structured layers (UI, Domain, Data).</li>
                                 <li>Applied design patterns: Singleton, Factory, Observer.</li>
                                 <li>Integrated LiveData, DataBinding, and Android Fragments for UI and navigation</li>
                             </ul>
-                            <a href=" ​​https://github.com/Linh-Rio/coffeeflow-android"
-                                class="btn btn-primary mt-3" target="_blank">
+                            <a href=" ​​https://github.com/Linh-Rio/coffeeflow-android" class="btn btn-primary mt-3"
+                                target="_blank">
                                 <i class="fab fa-github me-2"></i>View on
                                 GitHub
                             </a>
@@ -591,7 +607,11 @@
                         <div class="project-header">
                             <h4><i class="fas fa-mobile-alt me-2"></i>Quizzcle</h4>
                             <p class="mb-3">
-                                Quizzcle is a web-based application built to support engaging and collaborative learning experiences. The platform allows users to create, share, and participate in quizzes. One key feature is the ability to create private or public quiz rooms to host tests for groups of users, encouraging a culture of interactive and continuous learning for both students and educators.
+                                Quizzcle is a web-based application built to support engaging and collaborative learning
+                                experiences. The platform allows users to create, share, and participate in quizzes. One
+                                key feature is the ability to create private or public quiz rooms to host tests for
+                                groups of users, encouraging a culture of interactive and continuous learning for both
+                                students and educators.
                             </p>
                             <div>
                                 <span class="project-tech">Java</span>
@@ -600,13 +620,17 @@
                             </div>
                         </div>
                         <div class="project-content">
-                            <h6 class="text-primary mb-3">Key
+                            <h6 class="text-black mb-3">Key
                                 Contributions:</h6>
                             <ul class="feature-list">
-                                <li>Designed and implemented the relational database schema to support dynamic quiz creation, room management, and user interaction.</li>
-                                <li>Developed core application logic and public/user-facing features using Java and standard web technologies.</li>
-                                <li>Built and maintained responsive user interfaces using HTML, CSS, JavaScript, and Bootstrap.</li>
-                                <li>Ensured cross-browser compatibility and performance optimization for seamless user experience.</li>
+                                <li>Designed and implemented the relational database schema to support dynamic quiz
+                                    creation, room management, and user interaction.</li>
+                                <li>Developed core application logic and public/user-facing features using Java and
+                                    standard web technologies.</li>
+                                <li>Built and maintained responsive user interfaces using HTML, CSS, JavaScript, and
+                                    Bootstrap.</li>
+                                <li>Ensured cross-browser compatibility and performance optimization for seamless user
+                                    experience.</li>
                             </ul>
                             <p><strong>Role:</strong> Android Developer</p>
                             <a href="https://github.com/llMeoUll/OnlineQuizz.git" class="btn btn-primary mt-3"
@@ -628,11 +652,11 @@
                 Certificates</h2>
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <h4 class="mb-4 text-primary">
+                    <h4 class="mb-4 text-black">
                         <i class="fas fa-graduation-cap me-2"></i>Education
                     </h4>
                     <div class="education-card">
-                        <h5 class="fw-bold text-primary">FPT University</h5>
+                        <h5 class="fw-bold text-black">FPT University</h5>
                         <p class="text-muted mb-2">Software Engineering</p>
                         <p class="text-muted mb-2">2021 – 2025
                             (Expected)</p>
@@ -640,36 +664,36 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <h4 class="mb-4 text-primary">
+                    <h4 class="mb-4 text-black">
                         <i class="fas fa-certificate me-2"></i>Certificates
                     </h4>
                     <div class="timeline-item">
                         <div class="certificate-card">
-                            <h6 class="fw-bold">Agile Fundamentals Certification    </h6>
+                            <h6 class="fw-bold">Agile Fundamentals Certification </h6>
                             <p class="text-muted mb-1">2025</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="certificate-card">
-                            <h6 class="fw-bold"> Testing và Quản lý Kiểm thử trong Triển khai Dự án IT             </h6>
+                            <h6 class="fw-bold"> Testing và Quản lý Kiểm thử trong Triển khai Dự án IT </h6>
                             <p class="text-muted mb-1">2025</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="certificate-card">
                             <Spring class="fw-bold">Spring boot 3, Spring 6 & Hibernate for Beginners </h6>
+                                <p class="text-muted mb-1">2024</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <h6 class="fw-bold">Software Development Lifecycle </h6>
                             <p class="text-muted mb-1">2024</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="certificate-card">
-                            <h6 class="fw-bold">Software Development Lifecycle  </h6>
-                            <p class="text-muted mb-1">2024</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="certificate-card">
-                            <h6 class="fw-bold">Project Management Principles and Practices  </h6>
+                            <h6 class="fw-bold">Project Management Principles and Practices </h6>
                             <p class="text-muted mb-1">2024</p>
                         </div>
                     </div>
@@ -681,13 +705,13 @@
                     </div>
                     <div class="timeline-item">
                         <div class="certificate-card">
-                            <h6 class="fw-bold">User Experience Research and Design       </h6>
+                            <h6 class="fw-bold">User Experience Research and Design </h6>
                             <p class="text-muted mb-1">2023</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="certificate-card">
-                            <h6 class="fw-bold">Computer Communications          </h6>
+                            <h6 class="fw-bold">Computer Communications </h6>
                             <p class="text-muted mb-1">2023</p>
                         </div>
                     </div>
@@ -734,7 +758,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-primary text-white">
+    <section id="contact" class="section text-white"  style="background-color: var(--secondary-color)">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8" data-aos="fade-up">
@@ -760,11 +784,11 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <a href="https://www.linkedin.com/in/vinh-undefined-461366364/" class="btn btn-outline-light me-3" target="_blank">
+                        <a href="https://www.linkedin.com/in/vinh-undefined-461366364/"
+                            class="btn btn-outline-light me-3" target="_blank">
                             <i class="fab fa-linkedin me-2"></i>LinkedIn
                         </a>
-                        <a href="https://github.com/thevinh20012003" class="btn btn-outline-light me-3"
-                            target="_blank">
+                        <a href="https://github.com/thevinh20012003" class="btn btn-outline-light me-3" target="_blank">
                             <i class="fab fa-github me-2"></i>GitHub
                         </a>
                         <a href="https://github.com/thevinh20012003/github-portfilio" class="btn btn-outline-light"
