@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hà Minh Tuấn - Java Developer</title>
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
-            rel="stylesheet">
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-            rel="stylesheet">
-        <style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Thế Vinh - Java Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #3498db;
@@ -20,13 +16,13 @@
             --text-light: #7f8c8d;
             --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: var(--primary-color);
             line-height: 1.6;
         }
-        
+
         .hero-section {
             background: var(--gradient-bg);
             color: white;
@@ -34,7 +30,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero-section::before {
             content: '';
             position: absolute;
@@ -45,24 +41,24 @@
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
             opacity: 0.1;
         }
-        
+
         .avatar-container {
             position: relative;
             width: 200px;
             height: 200px;
             margin: 0 auto 30px;
         }
-        
+
         .avatar {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             border: 6px solid rgba(255, 255, 255, 0.3);
             background-image: url('avatar.jpg');
-            background-size: contain; 
-            background-repeat: no-repeat;       
-            background-position: center;      
-            
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -76,20 +72,20 @@
             transform: scale(1.05);
         }
 
-        
+
         .hero-content h1 {
             font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-        
+
         .hero-content .lead {
             font-size: 1.4rem;
             margin-bottom: 2rem;
             opacity: 0.9;
         }
-        
+
         .contact-links a {
             color: white;
             text-decoration: none;
@@ -98,16 +94,16 @@
             transition: all 0.3s ease;
             display: inline-block;
         }
-        
+
         .contact-links a:hover {
             color: var(--accent-color);
             transform: translateY(-2px);
         }
-        
+
         .section {
             padding: 80px 0;
         }
-        
+
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
@@ -116,7 +112,7 @@
             position: relative;
             color: var(--primary-color);
         }
-        
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -128,7 +124,7 @@
             background: var(--secondary-color);
             border-radius: 2px;
         }
-        
+
         .skill-card {
             background: white;
             border-radius: 15px;
@@ -138,18 +134,18 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-top: 4px solid var(--secondary-color);
         }
-        
+
         .skill-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
-        
+
         .skill-card h4 {
             color: var(--secondary-color);
             font-weight: 600;
             margin-bottom: 20px;
         }
-        
+
         .skill-tag {
             display: inline-block;
             background: linear-gradient(45deg, var(--secondary-color), #5dade2);
@@ -161,11 +157,11 @@
             font-weight: 500;
             transition: transform 0.2s ease;
         }
-        
+
         .skill-tag:hover {
             transform: scale(1.05);
         }
-        
+
         .project-card {
             background: white;
             border-radius: 15px;
@@ -174,23 +170,23 @@
             margin-bottom: 30px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
-        
+
         .project-header {
             background: var(--gradient-bg);
             color: white;
             padding: 25px;
             position: relative;
         }
-        
+
         .project-content {
             padding: 25px;
         }
-        
+
         .project-tech {
             display: inline-block;
             background: rgba(255, 255, 255, 0.2);
@@ -200,19 +196,19 @@
             margin: 3px;
             font-size: 0.8rem;
         }
-        
+
         .feature-list {
             list-style: none;
             padding: 0;
         }
-        
+
         .feature-list li {
             padding: 8px 0;
             border-bottom: 1px solid #ecf0f1;
             position: relative;
             padding-left: 25px;
         }
-        
+
         .feature-list li:before {
             content: '✓';
             position: absolute;
@@ -220,8 +216,9 @@
             color: var(--secondary-color);
             font-weight: bold;
         }
-        
-        .education-card, .certificate-card {
+
+        .education-card,
+        .certificate-card {
             background: white;
             border-radius: 15px;
             padding: 30px;
@@ -230,18 +227,19 @@
             border-left: 6px solid var(--secondary-color);
             transition: all 0.3s ease;
         }
-        
-        .education-card:hover, .certificate-card:hover {
+
+        .education-card:hover,
+        .certificate-card:hover {
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             transform: translateX(5px);
         }
-        
+
         .timeline-item {
             position: relative;
             padding-left: 30px;
             margin-bottom: 30px;
         }
-        
+
         .timeline-item:before {
             content: '';
             position: absolute;
@@ -253,14 +251,14 @@
             border-radius: 50%;
             box-shadow: 0 0 0 4px white, 0 0 0 6px var(--secondary-color);
         }
-        
+
         .interests-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             margin-top: 30px;
         }
-        
+
         .interest-item {
             text-align: center;
             padding: 30px 20px;
@@ -269,17 +267,17 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
         }
-        
+
         .interest-item:hover {
             transform: translateY(-5px);
         }
-        
+
         .interest-icon {
             font-size: 3rem;
             color: var(--secondary-color);
             margin-bottom: 20px;
         }
-        
+
         .btn-primary {
             background: var(--gradient-bg);
             border: none;
@@ -288,12 +286,12 @@
             font-weight: 600;
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
-        
+
         .floating-shapes {
             position: absolute;
             top: 0;
@@ -303,559 +301,502 @@
             overflow: hidden;
             z-index: 1;
         }
-        
+
         .floating-shapes span {
             position: absolute;
             display: block;
             background: rgba(255, 255, 255, 0.1);
             animation: float 6s ease-in-out infinite;
         }
-        
+
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
         }
-        
+
         .bg-light-custom {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
-        
+
         @media (max-width: 768px) {
             .hero-content h1 {
                 font-size: 2.5rem;
             }
-            
+
             .section-title {
                 font-size: 2rem;
             }
-            
+
             .avatar {
                 width: 150px;
                 height: 150px;
                 font-size: 3rem;
             }
-            
+
             .avatar-container {
                 width: 150px;
                 height: 150px;
             }
         }
     </style>
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav
-            class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-            <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="#home">
-                    <i class="fas fa-code me-2"></i>Hà Minh Tuấn
-                </a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link"
-                                href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="#education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+</head>
 
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="floating-shapes">
-                <span
-                    style="top: 20%; left: 10%; width: 80px; height: 80px; border-radius: 50%; animation-delay: -0.5s;"></span>
-                <span
-                    style="top: 60%; left: 80%; width: 60px; height: 60px; border-radius: 50%; animation-delay: -2s;"></span>
-                <span
-                    style="top: 30%; right: 20%; width: 40px; height: 40px; border-radius: 50%; animation-delay: -1.5s;"></span>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#home">
+                <i class="fas fa-code me-2"></i>Trần Thế Vinh
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="container position-relative" style="z-index: 2;">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-8">
-                        <div class="hero-content" data-aos="fade-up">
-                            <div class="avatar-container">
-                                <div class="avatar">
-                                </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="floating-shapes">
+            <span
+                style="top: 20%; left: 10%; width: 80px; height: 80px; border-radius: 50%; animation-delay: -0.5s;"></span>
+            <span
+                style="top: 60%; left: 80%; width: 60px; height: 60px; border-radius: 50%; animation-delay: -2s;"></span>
+            <span
+                style="top: 30%; right: 20%; width: 40px; height: 40px; border-radius: 50%; animation-delay: -1.5s;"></span>
+        </div>
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="hero-content" data-aos="fade-up">
+                        <div class="avatar-container">
+                            <div class="avatar">
                             </div>
-                            <h1>Hà Minh Tuấn</h1>
-                            <p class="lead">Java Developer (Fresher)</p>
-                            <p class="mb-4">Passionate about backend development
-                                with Java and Spring Framework</p>
-                            <div class="contact-links">
-                                <a href="mailto:minhtuanha2829@gmail.com"><i
-                                        class="fas fa-envelope"></i></a>
-                                <a href="tel:0367133632"><i
-                                        class="fas fa-phone"></i></a>
-                                <a href="https://linkedin.com/in/tuanhm29"
-                                    target="_blank"><i
-                                        class="fab fa-linkedin"></i></a>
-                                <a href="https://github.com/MinhTuan2003-max"
-                                    target="_blank"><i
-                                        class="fab fa-github"></i></a>
-                                <a
-                                    href="https://minhtuan2003-max.github.io/portfolio/"
-                                    target="_blank"><i
-                                        class="fas fa-globe"></i></a>
-                            </div>
+                        </div>
+                        <h1>Trần Thế Vinh</h1>
+                        <p class="lead">Java Developer (Fresher)</p>
+                        <p class="mb-4">Passionate about backend development
+                            with Java and Spring Framework</p>
+                        <div class="contact-links">
+                            <a href="mailto:vinhtran.dev20@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:0987433205"><i class="fas fa-phone"></i></a>
+                            <a href="https://www.linkedin.com/in/vinh-undefined-461366364/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/MinhTuan2003-max" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://minhtuan2003-max.github.io/portfolio/" target="_blank"><i
+                                    class="fas fa-globe"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">About Me</h2>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="text-center" data-aos="fade-up"
-                            data-aos-delay="200">
-                            <p class="lead text-muted">
-                                I am a 4th-year Software Engineering student
-                                with a passion for backend software development
-                                using Java.
-                                I have solid knowledge of Java Core, OOP, and
-                                have completed several projects using
-                                JSP/Servlet,
-                                Spring Boot, and databases like MySQL and SQL
-                                Server. I am always ready to learn and grow in a
-                                professional environment and look forward to
-                                developing myself better in the future.
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <p class="lead text-muted">
+                            I am a 4th-year Software Engineering student
+                            with a passion for backend software development
+                            using Java.
+                            I have solid knowledge of Java Core, OOP, and
+                            have completed several projects using
+                            JSP/Servlet,
+                            Spring Boot, and databases like MySQL and SQL
+                            Server. I am always ready to learn and grow in a
+                            professional environment and look forward to
+                            developing myself better in the future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light-custom">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical
+                Skills</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <h4><i class="fas fa-code text-primary me-2"></i>Programming
+                            Languages</h4>
+                        <div>
+                            <span class="skill-tag">Java (Core Java, Java
+                                8+)</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Typescript</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <h4><i class="fas fa-tools text-primary me-2"></i>Frameworks
+                            & Tools</h4>
+                        <div>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">JSP/Servlet</span>
+                            <span class="skill-tag">Hibernate/JPA</span>
+                            <span class="skill-tag">Maven/Gradle</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Thymeleaf</span>
+                            <span class="skill-tag">JUnit</span>
+                            <span class="skill-tag">Git/GitHub/Gitlab</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <h4><i class="fas fa-cogs text-primary me-2"></i>Other
+                            Skills</h4>
+                        <div>
+                            <span class="skill-tag">RESTful API</span>
+                            <span class="skill-tag">HTML/CSS/SCSS</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">Waterfall</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Scrum</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">IntelliJ IDEA</span>
+                            <span class="skill-tag">Eclipse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4><i class="fas fa-users me-2"></i>E-commerce</h4>
+                            <p class="mb-3">Developed a responsive and scalable e-commerce web application using Angular
+                                for frontend and Spring Boot for backend. The application includes essential e-commerce
+                                functionalities such as product catalog, search filters, shopping cart management, and
+                                checkout with secure Stripe payment integration. Applied secure login/logout, role-based
+                                access control using JWT, OAuth2, and HTTPS.</p>
+                            <div>
+                                <span class="project-tech">Angular</span>
+                                <span class="project-tech">Typescript</span>
+                                <span class="project-tech">Spring Boot</span>
+                                <span class="project-tech">Rest API</span>
+                                <span class="project-tech">JWT, OAuth2</span>
+                                <span class="project-tech">Stripe</span>
+                                <span class="project-tech">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h6 class="text-primary mb-3">Key Features:</h6>
+                            <ul class="feature-list">
+                                <li>Show a list of products</li>
+                                <li>Add products to shopping cart (CRUD)
+                                    and Shopping cart check out:</li>
+                                <li>Search by category name/ textbox</li>
+                                <li>Checkout</li>
+                            </ul>
+                            <a href="https://github.com/thevinh20012003/E-Commerce-Website.git" class="btn btn-primary mt-3"
+                                target="_blank">
+                                <i class="fab fa-github me-2"></i>View on
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4><i class="fas fa-book me-2"></i>Job Portal Web Application</h4>
+                            <p class="mb-3">
+                                A full-stack web application that allows users to register as job seekers or recruiters, post and apply for jobs, manage user profiles, and perform job searches. The platform simulates a real-world job portal with authentication, authorization, and user role-based access
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section bg-light-custom">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Technical
-                    Skills</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="skill-card">
-                            <h4><i
-                                    class="fas fa-code text-primary me-2"></i>Programming
-                                Languages</h4>
                             <div>
-                                <span class="skill-tag">Java (Core Java, Java
-                                    8+)</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Typescript</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">SQLite</span>
-                                <span class="skill-tag">SQL Server</span>
-                                <span class="skill-tag">MongoDB</span>
+                                <span class="project-tech">Spring
+                                    Boot</span>
+                                <span class="project-tech">Thymeleaf</span>
+                                <span class="project-tech">MySQL</span>
+                                <span class="project-tech">REST API</span>
+                                <span class="project-tech">Spring Security</span>
                             </div>
                         </div>
+                        <div class="project-content">
+                            <h6 class="text-primary mb-3">Key Features:</h6>
+                            <ul class="feature-list">
+                                <li>Developed backend logic with Spring Boot and designed key entities (Users, JobPost, Apply, Save, etc.).</li>
+                                <li>Built REST APIs for job posting, user registration, job search with filters (type, location, date).</li>
+                                <li>Integrated Thymeleaf for frontend rendering and implemented job save/apply status logic.</li>
+                                <li>Wrote custom SQL queries with @Query in JPA and structured code in Controller–Service–Repository layers.</li>
+                            </ul>
+                            <a href=" https://github.com/thevinh20012003/job-portal.git"
+                                class="btn btn-primary mt-3" target="_blank">
+                                <i class="fab fa-github me-2"></i>View on
+                                GitHub
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="skill-card">
-                            <h4><i
-                                    class="fas fa-tools text-primary me-2"></i>Frameworks
-                                & Tools</h4>
+                </div>
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4><i class="fas fa-book me-2"></i>CoffeeFlow</h4>
+                            <p class="mb-3">CoffeeFlow is an Android app designed to help coffee shop owners streamline operations, monitor staff activity, and apply promotional strategies. Built with MVVM and Clean Architecture, the system ensures scalability and code maintainability.</p>
                             <div>
-                                <span class="skill-tag">Spring Boot</span>
-                                <span class="skill-tag">JSP/Servlet</span>
-                                <span class="skill-tag">Hibernate/JPA</span>
-                                <span class="skill-tag">Maven/Gradle</span>
-                                <span class="skill-tag">Angular</span>
-                                <span class="skill-tag">Thymeleaf</span>
-                                <span class="skill-tag">JUnit</span>
-                                <span class="skill-tag">Git/GitHub/Gitlab</span>
+                                <span class="project-tech">Java</span>
+                                <span class="project-tech">Singleton, Factory, Observe</span>
+                                <span class="project-tech">Dagger 2</span>
+                                <span class="project-tech">LiveData, DataBinding, Fragments</span>
+                                <span class="project-tech">RoomDB</span>
+                                <span class="project-tech"> MVVM, Clean Architecture</span>
                             </div>
                         </div>
+                        <div class="project-content">
+                            <h6 class="text-primary mb-3">Key Features:</h6>
+                            <ul class="feature-list">
+                                <li>Developed core features using MVVM + Clean Architecture.</li>
+                                <li>Built reusable UI components and structured layers (UI, Domain, Data).</li>
+                                <li>Applied design patterns: Singleton, Factory, Observer.</li>
+                                <li>Integrated LiveData, DataBinding, and Android Fragments for UI and navigation</li>
+                            </ul>
+                            <a href=" ​​https://github.com/Linh-Rio/coffeeflow-android"
+                                class="btn btn-primary mt-3" target="_blank">
+                                <i class="fab fa-github me-2"></i>View on
+                                GitHub
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div class="skill-card">
-                            <h4><i
-                                    class="fas fa-cogs text-primary me-2"></i>Other
-                                Skills</h4>
+                </div>
+                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4><i class="fas fa-mobile-alt me-2"></i>Quizzcle</h4>
+                            <p class="mb-3">
+                                Quizzcle is a web-based application built to support engaging and collaborative learning experiences. The platform allows users to create, share, and participate in quizzes. One key feature is the ability to create private or public quiz rooms to host tests for groups of users, encouraging a culture of interactive and continuous learning for both students and educators.
+                            </p>
                             <div>
-                                <span class="skill-tag">RESTful API</span>
-                                <span
-                                    class="skill-tag">HTML/CSS/SCSS</span>
-                                <span class="skill-tag">Bootstrap</span>
-                                <span class="skill-tag">Tailwind CSS</span>
-                                <span class="skill-tag">Waterfall</span>
-                                <span class="skill-tag">Postman</span>
-                                <span class="skill-tag">IntelliJ IDEA</span>
-                                <span class="skill-tag">Eclipse</span>
+                                <span class="project-tech">Java</span>
+                                <span class="project-tech">MySQL</span>
+                                <span class="project-tech"> HTML, CSS, JavaScript, Bootstrap</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Projects</h2>
-                <div class="row">
-                    <div class="col-lg-6 col-md-12" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h4><i class="fas fa-users me-2"></i>Student
-                                    Management System</h4>
-                                <p class="mb-3">Web application for managing
-                                    students, allowing add/edit/delete students
-                                    and course management.</p>
-                                <div>
-                                    <span class="project-tech">JSP</span>
-                                    <span class="project-tech">Servlet</span>
-                                    <span class="project-tech">Hibernate</span>
-                                    <span class="project-tech">JPA</span>
-                                    <span class="project-tech">SQL Server</span>
-                                    <span class="project-tech">Bootstrap</span>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h6 class="text-primary mb-3">Key Features:</h6>
-                                <ul class="feature-list">
-                                    <li>CRUD operations for students</li>
-                                    <li>CRUD operations for courses</li>
-                                    <li>Search by name and student ID</li>
-                                    <li>Link students with multiple courses</li>
-                                </ul>
-                                <a
-                                    href="https://github.com/MinhTuan2003-max/SMS.git"
-                                    class="btn btn-primary mt-3"
-                                    target="_blank">
-                                    <i class="fab fa-github me-2"></i>View on
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h4><i class="fas fa-book me-2"></i>Personal
-                                    Library Manager</h4>
-                                <p class="mb-3">
-                                    A personal library management system with
-                                    both RESTful API and Thymeleaf UI,
-                                    allowing users to manage books with login
-                                    via Google (OAuth2).
-                                </p>
-                                <div>
-                                    <span class="project-tech">Spring
-                                        Boot</span>
-                                    <span class="project-tech">Thymeleaf</span>
-                                    <span class="project-tech">MongoDB</span>
-                                    <span class="project-tech">REST API</span>
-                                    <span class="project-tech">OAuth2</span>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h6 class="text-primary mb-3">Key Features:</h6>
-                                <ul class="feature-list">
-                                    <li>Login with Google using OAuth2</li>
-                                    <li>CRUD operations for books (title,
-                                        author, genre, description, cover
-                                        image)</li>
-                                    <li>Search and pagination on book list</li>
-                                    <li>Upload and display book cover
-                                        images</li>
-                                    <li>Accessible to authenticated users only
-                                        (single role: USER)</li>
-                                </ul>
-                                <a
-                                    href="https://github.com/MinhTuan2003-max/Personal-Library-Manager.git"
-                                    class="btn btn-primary mt-3"
-                                    target="_blank">
-                                    <i class="fab fa-github me-2"></i>View on
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h4><i class="fas fa-book me-2"></i>Task
-                                    Management System</h4>
-                                <p class="mb-3">A web application that helps
-                                    individuals or small teams manage tasks
-                                    effectively.
-                                    The system includes features for task
-                                    tracking, real-time notifications, and
-                                    role-based access control.</p>
-                                <div>
-                                    <span class="project-tech">Spring
-                                        Boot</span>
-                                    <span class="project-tech">JPA</span>
-                                    <span class="project-tech">Angular 20</span>
-                                    <span class="project-tech">Tailwind
-                                        CSS</span>
-                                    <span class="project-tech">MySQL</span>
-                                    <span class="project-tech">RESTful
-                                        API</span>
-                                    <span class="project-tech">WebSocket</span>
-                                    <span class="project-tech">JWT
-                                        Authentication</span>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h6 class="text-primary mb-3">Key Features:</h6>
-                                <ul class="feature-list">
-                                    <li>Designed and implemented RESTful APIs
-                                        using Spring Boot</li>
-                                    <li>Developed real-time notification system
-                                        via WebSocket</li>
-                                    <li>Integrated JWT for secure authentication
-                                        and authorization</li>
-                                    <li>Implemented role-based access control
-                                        for different user roles</li>
-                                </ul>
-                                <a
-                                    href="https://github.com/MinhTuan2003-max/TaskManagementSystem_TMS.git"
-                                    class="btn btn-primary mt-3"
-                                    target="_blank">
-                                    <i class="fab fa-github me-2"></i>View on
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h4><i class="fas fa-mobile-alt me-2"></i>GoGo –
-                                    Health Tracker App</h4>
-                                <p class="mb-3">
-                                    A mobile application that helps users
-                                    monitor and improve their daily health
-                                    habits
-                                    such as weight, sleep, diet, and workout
-                                    planning.
-                                </p>
-                                <div>
-                                    <span class="project-tech">Java</span>
-                                    <span class="project-tech">XML (Material
-                                        Design)</span>
-                                    <span class="project-tech">SQLite</span>
-                                    <span class="project-tech">Google
-                                        Sign-In</span>
-                                    <span
-                                        class="project-tech">MPAndroidChart</span>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h6 class="text-primary mb-3">Key
-                                    Contributions:</h6>
-                                <ul class="feature-list">
-                                    <li>Implemented BMI, BMR, BFP tracking and
-                                        weight prediction</li>
-                                    <li>Developed sleep and workout planning
-                                        modules</li>
-                                    <li>Integrated Google Sign-In and health
-                                        reminders</li>
-                                    <li>Used MPAndroidChart for data
-                                        visualization</li>
-                                </ul>
-                                <p><strong>Role:</strong> Android Developer</p>
-                                <a
-                                    href="https://github.com/MinhTuan2003-max/GoGoApp.git"
-                                    class="btn btn-primary mt-3"
-                                    target="_blank">
-                                    <i class="fab fa-github me-2"></i>View on
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education & Certificates Section -->
-        <section id="education" class="section bg-light-custom">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Education &
-                    Certificates</h2>
-                <div class="row">
-                    <div class="col-lg-6" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <h4 class="mb-4 text-primary">
-                            <i class="fas fa-graduation-cap me-2"></i>Education
-                        </h4>
-                        <div class="education-card">
-                            <h5 class="fw-bold text-primary">FPT University</h5>
-                            <p class="text-muted mb-2">Software Engineering</p>
-                            <p class="text-muted mb-2">2021 – 2025
-                                (Expected)</p>
-                            <p class="mb-0"><strong>GPA:</strong> 3.14/4.0</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <h4 class="mb-4 text-primary">
-                            <i class="fas fa-certificate me-2"></i>Certificates
-                        </h4>
-                        <div class="timeline-item">
-                            <div class="certificate-card">
-                                <h6 class="fw-bold"> Project Management
-                                    Principles and Practices</h6>
-                                <p class="text-muted mb-1">University of
-                                    California, Irvine(2024)</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="certificate-card">
-                                <h6 class="fw-bold"> Software Development
-                                    Lifecycle</h6>
-                                <p class="text-muted mb-1">University of
-                                    Minnesota(2023)</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="certificate-card">
-                                <h6 class="fw-bold">Basics of Web Development &
-                                    Coding</h6>
-                                <p class="text-muted mb-1">University of
-                                    Michigan (2023)</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="certificate-card">
-                                <h6 class="fw-bold">TOPIK 3</h6>
-                                <p class="text-muted mb-1">Korean Language
-                                    Proficiency</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interests Section -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Interests &
-                    Goals</h2>
-                <div class="interests-grid">
-                    <div class="interest-item" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="interest-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h5>Backend Development</h5>
-                        <p class="text-muted">Passionate about backend
-                            development, especially large-scale data processing
-                            systems</p>
-                    </div>
-                    <div class="interest-item" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="interest-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h5>Spring Framework</h5>
-                        <p class="text-muted">Aspiring to become a specialized
-                            Java Developer in Spring Framework and
-                            Microservices</p>
-                    </div>
-                    <div class="interest-item" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div class="interest-icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <h5>Continuous Learning</h5>
-                        <p class="text-muted">Regularly learning through online
-                            courses and participating in programming
-                            communities</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section bg-primary text-white">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-8" data-aos="fade-up">
-                        <h2 class="section-title text-white">Let's Get In
-                            Touch</h2>
-                        <p class="lead mb-4">Ready to bring fresh perspectives
-                            and dedication to your development team</p>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="contact-item">
-                                    <i class="fas fa-envelope fa-2x mb-3"></i>
-                                    <h5>Email</h5>
-                                    <a href="mailto:minhtuanha2829@gmail.com"
-                                        class="text-white">minhtuanha2829@gmail.com</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-item">
-                                    <i class="fas fa-phone fa-2x mb-3"></i>
-                                    <h5>Phone</h5>
-                                    <a href="tel:0367133632"
-                                        class="text-white">0367133632</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <a href="https://linkedin.com/in/tuanhm29"
-                                class="btn btn-outline-light me-3"
+                        <div class="project-content">
+                            <h6 class="text-primary mb-3">Key
+                                Contributions:</h6>
+                            <ul class="feature-list">
+                                <li>Designed and implemented the relational database schema to support dynamic quiz creation, room management, and user interaction.</li>
+                                <li>Developed core application logic and public/user-facing features using Java and standard web technologies.</li>
+                                <li>Built and maintained responsive user interfaces using HTML, CSS, JavaScript, and Bootstrap.</li>
+                                <li>Ensured cross-browser compatibility and performance optimization for seamless user experience.</li>
+                            </ul>
+                            <p><strong>Role:</strong> Android Developer</p>
+                            <a href="https://github.com/llMeoUll/OnlineQuizz.git" class="btn btn-primary mt-3"
                                 target="_blank">
-                                <i class="fab fa-linkedin me-2"></i>LinkedIn
-                            </a>
-                            <a href="https://github.com/MinhTuan2003-max"
-                                class="btn btn-outline-light me-3"
-                                target="_blank">
-                                <i class="fab fa-github me-2"></i>GitHub
-                            </a>
-                            <a
-                                href=" https://minhtuan2003-max.github.io/portfolio/"
-                                class="btn btn-outline-light" target="_blank">
-                                <i class="fas fa-globe me-2"></i>Portfolio
+                                <i class="fab fa-github me-2"></i>View on
+                                GitHub
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white text-center py-4">
-            <div class="container">
-                <p class="mb-0">&copy; 2025 Hà Minh Tuấn. All rights
-                    reserved.</p>
+    <!-- Education & Certificates Section -->
+    <section id="education" class="section bg-light-custom">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Education &
+                Certificates</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="mb-4 text-primary">
+                        <i class="fas fa-graduation-cap me-2"></i>Education
+                    </h4>
+                    <div class="education-card">
+                        <h5 class="fw-bold text-primary">FPT University</h5>
+                        <p class="text-muted mb-2">Software Engineering</p>
+                        <p class="text-muted mb-2">2021 – 2025
+                            (Expected)</p>
+                        <p class="mb-0"><strong>GPA:</strong> 3.1/4.0</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="mb-4 text-primary">
+                        <i class="fas fa-certificate me-2"></i>Certificates
+                    </h4>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <h6 class="fw-bold">Agile Fundamentals Certification    </h6>
+                            <p class="text-muted mb-1">2025</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <h6 class="fw-bold"> Testing và Quản lý Kiểm thử trong Triển khai Dự án IT             </h6>
+                            <p class="text-muted mb-1">2025</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <Spring class="fw-bold">Spring boot 3, Spring 6 & Hibernate for Beginners </h6>
+                            <p class="text-muted mb-1">2024</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <h6 class="fw-bold">Software Development Lifecycle  </h6>
+                            <p class="text-muted mb-1">2024</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <h6 class="fw-bold">Project Management Principles and Practices  </h6>
+                            <p class="text-muted mb-1">2024</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <h6 class="fw-bold">Web Design for Everybody: Basics of Web Development & Coding </h6>
+                            <p class="text-muted mb-1">2023</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <h6 class="fw-bold">User Experience Research and Design       </h6>
+                            <p class="text-muted mb-1">2023</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="certificate-card">
+                            <h6 class="fw-bold">Computer Communications          </h6>
+                            <p class="text-muted mb-1">2023</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <script>
+    <!-- Interests Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Interests &
+                Goals</h2>
+            <div class="interests-grid">
+                <div class="interest-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="interest-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h5>Backend Development</h5>
+                    <p class="text-muted">Passionate about backend
+                        development, especially large-scale data processing
+                        systems</p>
+                </div>
+                <div class="interest-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="interest-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h5>Spring Framework</h5>
+                    <p class="text-muted">Aspiring to become a specialized
+                        Java Developer in Spring Framework and
+                        Microservices</p>
+                </div>
+                <div class="interest-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="interest-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h5>Continuous Learning</h5>
+                    <p class="text-muted">Regularly learning through online
+                        courses and participating in programming
+                        communities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h2 class="section-title text-white">Let's Get In
+                        Touch</h2>
+                    <p class="lead mb-4">Ready to bring fresh perspectives
+                        and dedication to your development team</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope fa-2x mb-3"></i>
+                                <h5>Email</h5>
+                                <a href="mailto:tranvinh.dev20@gmail.com"
+                                    class="text-white">tranvinh.dev20@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <i class="fas fa-phone fa-2x mb-3"></i>
+                                <h5>Phone</h5>
+                                <a href="tel:0987433205" class="text-white">0987433205</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://www.linkedin.com/in/vinh-undefined-461366364/" class="btn btn-outline-light me-3" target="_blank">
+                            <i class="fab fa-linkedin me-2"></i>LinkedIn
+                        </a>
+                        <a href="https://github.com/thevinh20012003" class="btn btn-outline-light me-3"
+                            target="_blank">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                        <a href="https://github.com/thevinh20012003/github-portfilio" class="btn btn-outline-light"
+                            target="_blank">
+                            <i class="fas fa-globe me-2"></i>Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Trần Thế Vinh. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
         // Initialize AOS
         AOS.init({
             duration: 800,
@@ -878,7 +819,7 @@
         });
 
         // Navbar background on scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('shadow');
@@ -902,9 +843,10 @@
         }
 
         // Start typing effect after page load
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             setTimeout(typeWriter, 1000);
         });
     </script>
-    </body>
+</body>
+
 </html>
